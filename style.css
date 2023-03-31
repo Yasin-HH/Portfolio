@@ -4,11 +4,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  /* Commentaire */
   body {
     font-family: Arial, sans-serif;
     background-color: #333;
     color: #fff;
   }
+
+  /* Commentaire */
   header {
     position: fixed;
     top: 0;
@@ -17,32 +21,52 @@
     background-color: #222;
     padding: 20px;
   }
+
+  /* Commentaire */
   nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
+
+  /* Commentaire */
   nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px;
+    text-align: center;
+    display: block;
   }
+
+  /* Commentaire */
   nav ul li a:hover {
     background-color: #fff;
     color: #333;
     border-radius: 5px;
   }
+  
+  /* Commentaire */
   main {
     margin-top: 10px;
     padding: 1px;
   }
+
+  /* Commentaire */
   section {
     margin-bottom: 50px;
   }
+
+  /* Commentaire */
   h1, h2 {
     text-align: center;
     margin-bottom: 30px;
   }
+
+  /* Commentaire */
   ul {
     display: flex;
     justify-content: space-between;
@@ -51,6 +75,7 @@
     padding: 0;
   }
   
+  /* Commentaire */
   li {
     margin: 10px;
     padding: 10px;
@@ -60,18 +85,25 @@
     border: none; /* ajouter cette ligne pour supprimer les bordures */
   }
   
+  /* Commentaire */
   a {
     color: #fff;
     text-decoration: none;
   }
+
+  /* Commentaire */
   a:hover {
     color: #333;
     background-color: #fff;
   }
+
+  /* Commentaire */
   form {
     display: flex;
     flex-direction: column;
   }
+
+  /* Commentaire */
   input[type="text"], input[type="email"], textarea {
     padding: 10px;
     margin-bottom: 20px;
@@ -80,6 +112,8 @@
     background-color: #222;
     color: #fff;
   }
+
+  /* Commentaire */
   input[type="submit"] {
     padding: 10px;
     background-color: #fff;
@@ -88,10 +122,14 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+  /* Commentaire */
   input[type="submit"]:hover {
     background-color: #333;
     color: #fff;
   }
+
+  /* Commentaire */
   #home {
     height: 100vh;
     background-image: url("https://cdn.create.vista.com/api/media/medium/342543262/stock-photo-selective-focus-computer-mouse-hand?token=");
@@ -103,12 +141,16 @@
     align-items: center;
     
   }
+
+  /* Commentaire */
   #home h1 {
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 2px #333;
     animation: slideIn 1s ease-in-out;
   }
+
+  /* Commentaire */
   #home p {
     font-size: 1.5rem;
     color: #fff;
@@ -116,6 +158,8 @@
     animation: slideIn 1s ease-in-out;
     animation-delay: 0.5s;
   }
+
+  /* Commentaire */
   @keyframes slideIn {
     from {
       transform: translateY(-50px);
@@ -127,59 +171,67 @@
     }
   }  
 
+  /* Commentaire */
 #skills ul {
   list-style-type: none;
   padding: 0;
   margin-left: 15%;
   margin-right: 15%;
 }
-
+/* Commentaire */
 #skills li {
   display: inline-block;
   margin: 10px;
   text-align: center;
 }
 
+/* Commentaire */
 .skill-item img {
   display: block;
   max-width: 50px;
   margin: 0 auto;
 }
 
+/* Commentaire */
 .skill-item p {
   margin-top: 8px;
 }
 
-
+  /* Commentaire */
   #experience ul li {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 10px;
   }
   
+  /* Commentaire */
   #projects ul li {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 10px;
   }
-  
+
+  /* Commentaire */
   #projects {
     background-color: #333;
     padding: 50px 0;
     text-align: center;
   }
-  
+
+  /* Commentaire */
   #projects h2 {
     font-size: 36px;
     margin-bottom: 30px;
   }
   
+  /* Commentaire */
   .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   
+  /* Commentaire */
   .project-card {
     background-color: rgb(31, 30, 30);
     border-radius: 10px;
@@ -189,27 +241,32 @@
     width: 400px;
   }
   
+  /* Commentaire */
   .project-card img {
     display: block;
     width: 100%;
     border: none;
   }
   
+  /* Commentaire */
   .project-description {
     padding: 20px;
     text-align: left;
   }
   
+  /* Commentaire */
   .project-description h3 {
     font-size: 24px;
     margin-bottom: 10px;
   }
   
+  /* Commentaire */
   .project-description p {
     font-size: 16px;
     margin-bottom: 20px;
   }
   
+  /* Commentaire */
   .project-description a {
     background-color: #4e565e;
     border-radius: 5px;
@@ -221,19 +278,21 @@
     transition: background-color 0.2s;
   }
   
+  /* Commentaire */
   .project-description a:hover {
     background-color: #0e1c2b;
   }
   
 
+  /* Commentaire */
   .profil-image {
     display: flex;
-    flex-direction: row;
-    align-items: left;
+    flex-direction: column;
+    align-items: center;
     
   }
   
-  
+  /* Commentaire */
   footer {
     background-color: #333;
     color: white;
@@ -241,17 +300,19 @@
     padding: 20px;
   }
   
+  /* Commentaire */
   .banner p {
     margin: 0;
     font-size: 18px;
   }
   
-
+/* Commentaire */
   .contact-btn {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
   }
   
+  /* Commentaire */
   .contact-btn a {
     display: inline-block;
     padding: 10px 20px;
@@ -262,20 +323,21 @@
     border-radius: 5px;
   }
 
- 
+ /* Commentaire */
   .profile {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: center;
     flex-direction: column;
     align-items: right;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
 
 
-
+/* Commentaire */
 .personal-info {
   display: flex;
   flex-direction: column;
@@ -284,7 +346,7 @@
   margin-bottom: 30px;
 }
 
-
+/* Commentaire */
 .cv-container {
   display: flex;
   width: 300px;
@@ -293,6 +355,7 @@
   margin-left: 100px;
 }
 
+/* Commentaire */
 .cv-button {
   display: inline-block;
   background-color: #eba133;
@@ -303,6 +366,7 @@
   transition: background-color 0.3s;
 }
 
+/* Commentaire */
 .cv-button:hover {
   background-color: #ce402d;
 }
@@ -312,8 +376,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+
 }
 
+/* Commentaire */
 .challenge {
   background-color: #4b4949;
   padding: 20px;
@@ -321,18 +393,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: calc(33% - 20px);
 }
-
+/* Commentaire */
 .challenge h3 {
   margin: 0 0 10px;
   font-size: 18px;
   font-weight: bold;
 }
 
+/* Commentaire */
 .challenge p {
   margin: 0;
   font-size: 16px;
 }
 
+/* Commentaire */
 .root-me-button {
   display: inline-block;
   background-color: #eba133;
@@ -342,21 +416,43 @@
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-decoration: none;  
+  border: none;
+  outline: none;
+  position: center;
+  margin-left: 42%;
+  margin-right: 42%;
+  margin-top: 10px;
+
 }
 
+/* Commentaire */
 .root-me-button:hover {
   background-color: #2980b9;
 }
 
+/* Commentaire */
 .text-root-me{
   margin-top: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
+/* Commentaire */
 .text-rm{
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
+  text-align: center; 
 }
 
-.root-me-button{
-  margin-top: 10px;
-}
