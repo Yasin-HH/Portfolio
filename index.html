@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
       <nav>
         <ul>
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#about">Profil</a></li>
           <li><a href="#skills">Compétences</a></li>
           <li><a href="#projects">Projets</a></li>
@@ -22,13 +22,15 @@
     <main>
       <section id="home">
         <h1>Bienvenue sur mon portfolio</h1>
-        <p>Je suis un étudiant en informatique passionné par le réseau, le système et la cybersécurité</p>
+        <p id="dynamic-text"></p>
       </section>
       <section id="about" class="about">
         <h2>Profil</h2>
         <div class="profil-image">
+
+
           <div class="profile">  
-            <p>Je m'appelle Harchaoui Yasin, étudiant en informatique avec une passion ardente pour la sécurité informatique. Mon expertise dans les réseaux et les systèmes, associée à mon désir constant d'apprendre, me permet d'aborder chaque défi en matière de cybersécurité. Ma créativité et mon adaptabilité sont essentielles pour résoudre des problèmes complexes et protéger les systèmes contre les menaces potentielles.</p>             
+            <p>Passionné par la cybersécurité, je suis un étudiant en informatique déterminé à apprendre sans cesse. Mes compétences en réseaux et systèmes m'aident à surmonter les défis du secteur, tout en poursuivant activement l'enrichissement de mes connaissances et l'amélioration de mes aptitudes.</p>             
             </div>    
           <div class="cv-container">
             <a href="Alternance2.pdf" target="_blank" class="cv-button">Ouvrir mon CV</a>
@@ -196,5 +198,6 @@
       </footer>
       
     </main>
+    <script src="javascript.js"></script>
   </body>
 </html>
