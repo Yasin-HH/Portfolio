@@ -104,3 +104,20 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+
+/* Barre de progression des challenges root-me*/
+// Sélectionnez tous les éléments de challenge
+const challenges = document.querySelectorAll('.challenge');
+
+challenges.forEach((challenge) => {
+  // Récupérez la progression à partir de l'attribut data-progress
+  const progressPercentage = challenge.getAttribute('data-progress');
+  
+  // Sélectionnez la barre de progression pour ce challenge
+  const progressBar = challenge.querySelector('.progress-bar');
+  
+  // Définissez la largeur de la barre de progression en fonction de la progression
+  progressBar.style.width = progressPercentage + '%';
+});
+

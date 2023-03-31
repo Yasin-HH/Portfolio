@@ -73,6 +73,11 @@ nav ul li {
   margin: 0 10px;
 }
 
+nav li {
+  width: auto; /* Ajustez la largeur si nécessaire */
+  white-space: nowrap;
+}
+
   /* Commentaire */
   nav ul li a {
     color: #ffffff;
@@ -499,3 +504,18 @@ nav ul li {
   text-align: center; 
 }
 
+/* barre de pogression root-me */
+.progress-bar-container {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 20px;
+  background-color: #eba133;
+  border-radius: 3px;
+}
+/* -----------------------------*/
