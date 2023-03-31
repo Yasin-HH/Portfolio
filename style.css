@@ -34,7 +34,7 @@
   }
   main {
     margin-top: 10px;
-    padding: 0px;
+    padding: 1px;
   }
   section {
     margin-bottom: 50px;
@@ -127,16 +127,29 @@
     }
   }  
 
-  #skills ul li {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 10px;
-    
-  }
-  #skills ul{
-    display: flex;
-    flex-wrap: wrap;
-  }
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#skills li {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.skill-item img {
+  display: block;
+  max-width: 50px;
+  margin: 0 auto;
+}
+
+.skill-item p {
+  margin-top: 8px;
+}
+
 
   #experience ul li {
     border: 1px solid #fff;
@@ -217,13 +230,9 @@
     display: flex;
     flex-direction: row;
     align-items: left;
+    
   }
   
-  .profil-image img {
-    margin-right: 20px;
-    max-width: 20%;
-    height: 20%;
-  }
   
   footer {
     background-color: #333;
@@ -260,22 +269,11 @@
     text-align: center;
     flex-direction: column;
     align-items: right;
+    margin-left: 5%;
 
 }
 
-#skills ul li {
-  margin: 10px 5px;
-}
-@media screen and (max-width: 768px) {
-  #skills ul li {
-    width: 45%;
-  }
-}
-@media screen and (max-width: 480px) {
-  #skills ul li {
-    width: 100%;
-  }
-}
+
 
 
 .personal-info {
