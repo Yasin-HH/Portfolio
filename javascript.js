@@ -75,5 +75,32 @@ function updateText() {
 updateText();
 
 
+//Regler le défillement.
+// Sélectionnez tous les éléments de la barre de navigation
+const navLinks = document.querySelectorAll('nav a');
 
+// Obtenez la hauteur de la barre de navigation
+const navHeight = document.querySelector('header').offsetHeight;
 
+// Ajoutez un gestionnaire d'événements 'click' à chaque lien de la barre de navigation
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    // Empêchez le comportement par défaut du navigateur
+    event.preventDefault();
+    
+    // Obtenez l'identifiant de la section cible
+    const targetId = link.getAttribute('href');
+    
+    // Sélectionnez la section cible
+    const targetSection = document.querySelector(targetId);
+    
+    // Calculez la position de défilement souhaitée en tenant compte de la hauteur de la barre de navigation
+    const scrollToPosition = targetSection.offsetTop - navHeight;
+    
+    // Faites défiler la page vers la position souhaitée
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth',
+    });
+  });
+});

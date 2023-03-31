@@ -20,7 +20,42 @@
     width: 100%;
     background-color: #222;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(248, 4, 4, 0.692);
   }
+/* Commentaire */
+.Navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+
+}
+
+/* Commentaire */
+.Navigation img {
+
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Transition douce de la transformation */
+}
+
+.Navigation a:hover img {
+  transform: scale(1.1); /* Agrandit l'icône de 10% lors du survol */
+}
+
+.Navigation a {
+  background-color: transparent; /* Couleur d'arrière-plan par défaut */
+  display: inline-block; /* Permet de rendre les éléments "a" comme des blocs pour mieux appliquer les styles */
+  transition: background-color 0.3s; /* Transition douce de la couleur d'arrière-plan */
+}
+
+.Navigation a:hover {
+  background-color:  #333; /* Couleur d'arrière-plan lors du survol (remplacez #abcdef par la couleur souhaitée) */
+}
+
+
 
   /* Commentaire */
   nav ul {
@@ -33,13 +68,21 @@
     text-align: center;
   }
 
+  /* 2. Augmenter l'espacement entre les éléments de la barre de navigation */
+nav ul li {
+  margin: 0 10px;
+}
+
   /* Commentaire */
   nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
   }
 
   /* Commentaire */
