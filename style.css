@@ -21,8 +21,11 @@
     background-color: #222;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(248, 4, 4, 0.692);
-  }
+    z-index: 1000;
+      }
+
 /* Commentaire */
+
 .Navigation{
     display: flex;
     align-items: center;
@@ -54,6 +57,95 @@
 .Navigation a:hover {
   background-color:  #333; /* Couleur d'arrière-plan lors du survol (remplacez #abcdef par la couleur souhaitée) */
 }
+
+
+
+@media screen and (max-width: 858px) {
+  /* Cacher la liste de navigation par défaut (inutile maintenant) */
+   nav ul li a {
+    display: none;
+  } 
+
+  /* Afficher le menu déroulant */
+  .menu-icon {
+    display: flex;
+    margin-left: 50%;
+    position: center;
+    cursor: pointer;
+  }
+  
+  /* Style du menu déroulant */
+  .menu-icon .navicon {
+    background: #000000;
+    display: block;
+    height: 10px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+  
+  /* Animation du menu déroulant */
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* Style de la liste de navigation du menu déroulant */
+  .menu-icon.active .navicon {
+    background: transparent;
+  }
+  
+  .menu-icon.active .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-icon.active .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  /* Afficher les liens du menu dans le menu déroulant */
+  nav.active ul li a {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  nav.active ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    right: 0;
+    padding: 4px;
+    z-index: 1000;
+
+  }
+
+  nav ul li {
+    line-height: 4px;
+  }
+}
+
+
 
 
 
@@ -92,7 +184,7 @@ nav li {
 
   /* Commentaire */
   nav ul li a:hover {
-    background-color: #fff;
+    background-color: #eba133;
     color: #333;
     border-radius: 5px;
   }
@@ -187,7 +279,6 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   /* Commentaire */
@@ -218,32 +309,39 @@ nav li {
       opacity: 1;
     }
   }  
-
-  /* Commentaire */
+/* Styles pour les compétences */
 #skills ul {
-  list-style-type: none;
-  padding: 0;
-  margin-left: 15%;
-  margin-right: 15%;
+  /* Activer la mise en page flexible pour la liste des compétences */
+  display: flex;
+  /* Faire passer les éléments sur une deuxième ligne si nécessaire */
+  flex-wrap: wrap;
+  /* Centrer les éléments horizontalement */
+  justify-content: center;
+  /* Centrer les éléments verticalement */
+  align-items: center;
 }
-/* Commentaire */
+
 #skills li {
-  display: inline-block;
+  /* Définir la largeur et la hauteur de chaque élément de compétence */
+  width: 100px;
+  height: 100px;
+  /* Ajouter de la marge autour de chaque élément de compétence */
   margin: 10px;
-  text-align: center;
+  /* Aligner le contenu de chaque élément de compétence en colonne */
+  display: flex;
+  flex-direction: column;
+  /* Centrer le contenu verticalement */
+  align-items: center;
 }
 
-/* Commentaire */
-.skill-item img {
-  display: block;
-  max-width: 50px;
-  margin: 0 auto;
+#skills li img {
+  /* Garder la proportion d'origine et s'adapter à l'espace disponible */
+  object-fit: contain;
+  /* Ajuster la taille de l'icône de compétence pour qu'elle ait la même taille que les autres icônes */
+  max-width: 100%;
+  max-height: 100%;
 }
 
-/* Commentaire */
-.skill-item p {
-  margin-top: 8px;
-}
 
   /* Commentaire */
   #experience ul li {
@@ -358,6 +456,7 @@ nav li {
   .contact-btn {
     text-align: center;
     margin-top: 100px;
+    
   }
   
   /* Commentaire */
@@ -369,7 +468,11 @@ nav li {
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-  }
+    transition: background-color 0.2s; 
+    text-align: center;
+    margin-bottom: 20px;    
+ }
+
 
  /* Commentaire */
   .profile {
@@ -519,3 +622,20 @@ nav li {
   border-radius: 3px;
 }
 /* -----------------------------*/
+
+/* Animation des projets */
+
+.project-card {
+  transition: transform 0.3s ease-in-out; /* Durée et type d'animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée initiale */
+}
+
+.project-card:hover {
+  transform: scale(1.1); /* Ajustez le facteur d'échelle au besoin */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre portée plus importante lors du survol */
+}
+
+
+
+
+/* --------------------------------*/
