@@ -1,4 +1,4 @@
-// Sélectionne toutes les images des projets
+   // Sélectionne toutes les images des projets
 const projectImages = document.querySelectorAll('.project-image');
 
 // Pour chaque image de projet, ajoute un gestionnaire d'événements au clic
@@ -12,17 +12,16 @@ projectImages.forEach((image) => {
   });
 });
 
-/* Animation */
+// Initialise les variables pour l'animation du texte
 let textElement = document.getElementById('dynamic-text');
-
 let baseText = "Je suis étudiant en informatique passionné par ";
 let steps = ["le réseau", "le système", "la cybersécurité"];
-
 let currentStep = 0;
 let currentChar = 0;
 let erasing = false;
 let initialWrite = true;
 
+// Fonction pour mettre à jour le texte dynamique avec l'animation
 function updateText() {
   // Écrire la phrase complète au début
   if (initialWrite) {
@@ -74,8 +73,7 @@ function updateText() {
 // Lancer la fonction d'animation
 updateText();
 
-
-//Regler le défillement.
+//Régler le défilement.
 // Sélectionnez tous les éléments de la barre de navigation
 const navLinks = document.querySelectorAll('nav a');
 
@@ -90,8 +88,8 @@ navLinks.forEach((link) => {
     
     // Obtenez l'identifiant de la section cible
     const targetId = link.getAttribute('href');
-    
-    // Sélectionnez la section cible
+
+   // Sélectionnez la section cible
     const targetSection = document.querySelector(targetId);
     
     // Calculez la position de défilement souhaitée en tenant compte de la hauteur de la barre de navigation
@@ -105,8 +103,7 @@ navLinks.forEach((link) => {
   });
 });
 
-
-/* Barre de progression des challenges root-me*/
+/* Barre de progression des challenges root-me */
 // Sélectionnez tous les éléments de challenge
 const challenges = document.querySelectorAll('.challenge');
 
@@ -121,13 +118,13 @@ challenges.forEach((challenge) => {
   progressBar.style.width = progressPercentage + '%';
 });
 
-
+// Sélectionnez l'icône du menu et la barre de navigation
 const menuIcon = document.querySelector('.menu-icon');
 const nav = document.querySelector('nav');
 
+// Ajoutez un gestionnaire d'événements 'click' à l'icône du menu
 menuIcon.addEventListener('click', () => {
+  // Basculez la classe 'active' sur l'icône du menu et la barre de navigation
   menuIcon.classList.toggle('active');
   nav.classList.toggle('active');
 });
-
-
