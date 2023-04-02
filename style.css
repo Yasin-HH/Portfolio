@@ -204,6 +204,7 @@ nav li {
   h1, h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 30px;
   }
 
   /* Commentaire */
@@ -364,11 +365,6 @@ nav li {
     text-align: center;
   }
 
-  /* Commentaire */
-  #projects h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
   
   /* Commentaire */
   .project-container {
@@ -632,7 +628,16 @@ nav li {
 .project-card {
   transition: transform 0.3s ease-in-out; /* Durée et type d'animation */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée initiale */
+
 }
+
+.project-card img {
+  width: 400px;
+  height: 300px;  
+
+}
+
+
 
 .project-card:hover {
   transform: scale(1.1); /* Ajustez le facteur d'échelle au besoin */
